@@ -537,6 +537,26 @@ body[data-lang="zh"] {
   line-height: 1;
 }
 
+/* Inline link used inside body text (book, supervisor homepage) */
+.inline-link {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-color: rgba(26, 58, 92, 0.35);
+  text-underline-offset: 2px;
+  transition: all var(--transition);
+}
+
+.inline-link:hover {
+  color: var(--color-accent-light);
+  text-decoration-color: var(--color-accent-light);
+}
+
+/* Highlight the site owner's name in author lists */
+.pub-authors strong {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
 .open-access-badge {
   display: inline-block;
   padding: 2px 8px;
